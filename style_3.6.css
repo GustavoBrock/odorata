@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+
+/* --------------------------------- ESTILO REFERENTE A FORMATO DA PÁGINA GERAL--------------------------------- */
+
+/* 🔹 Oculta a barra superior "Deploy" */
+header {visibility: hidden;}
+[data-testid="stHeader"] {display: none;}
+
+/* 🔹 Fundo principal suave */
+body, [data-testid="stAppViewContainer"] {
+    background-color: #E8E5D8 !important;
+    color: #4b5a35 !important; /* Verde natural */
+}
+
+/* 🔹 Ajusta o tamanho do texto geral das páginas */
+p, .markdown-text-container {
+    font-size: 21px !important;  /* Aumenta o tamanho do texto */
+    line-height: 1.25 !important; /* Melhora o espaçamento */
+}
+
+/* --------------------------------- ESTILO REFERENTE A SIDEBAR PARA OS ITENS DE NAVEGAÇÃO--------------------------------- */
+
+/* 🔹 Sidebar personalizada com tom terroso */
+[data-testid="stSidebarContent"] {
+    background-color: #a0a67e !important; /* Novo tom terroso */
+    color: #F5E1C8 !important;
+    border: 4px solid #354a21  !important;  /* Borda verde escura */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+
+/* 🔹 Ajusta o tamanho dos ícones e do texto da sidebar */
+[data-testid="stSidebarContent"] .stRadio div {
+    font-size: 23px !important; /* Aumenta o tamanho do texto */
+    color: #ffffff !important; /* Mantém a cor harmonizada */
+}
+
+/* 🔹 Centraliza e aumenta a logo */
+.sidebar-logo-container {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-bottom: 20px !important;
+}
+
+.sidebar-logo {
+    width: 220px !important; /* Ajuste para um tamanho maior */
+}
+
+.st-emotion-cache-1f3w014 {
+    vertical-align: middle;
+    overflow: hidden;
+    color: #4b5a35;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* Esconde o ícone original da barra lateral */
+.st-emotion-cache-1f3w014 svg {
+    display: none !important;
+}
+
+/* Personaliza a área do botão */
+.st-emotion-cache-1f3w014 {
+    color: #4b5a35 !important; /* Cor verde escuro */
+    font-size: 1.5rem !important; /* Tamanho do novo ícone */
+    font-weight: bold !important;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(75, 90, 53, 0.2); /* Fundo verde escuro com 50% de transparência */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 2px solid #4b5a35 !important; /* Borda mais escura para destaque */
+}
+
+/* --------------------------------- ESTILO REFERENTE AOS TÍTULOS E CONTEUDOS DAS PAGINAS PRINCIPAIS --------------------------------- */
+
+/* 🔹 Estiliza os títulos das páginas */
+.page-title {
+    text-align: left;
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    color: #4b5a35; /* Verde natural */
+    padding-top: 10px;
+}
+
+/* 🔹 Estiliza os títulos das páginas */
+.page-subtitle {
+    text-align: left;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4b5a35; /* Verde natural */
+    padding-top: 10px;
+}
+
+/* 🔹 Ajusta a margem da área de conteúdo */
+.content {
+    margin-left: 280px;
+    padding: 25px;
+}
+
+/* 🔹 Ajusta o conteúdo dos blocos da página inicial */
+.container {
+    padding: 15px;
+    background-color: #4b5a35b6;
+    border-radius: 15px;
+    border: 3px solid rgb(53, 74, 33)  !important;  /* Borda verde escura */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+    width: 100%;
+    text-align: left;
+    color: #ffffff;
+}
+
+/* 🔹 Ajusta a cor do texto dentro de TODOS os campos do Gerador de Blends */
+input[type="text"], select, textarea, .stTextInput, .stSelectbox, .stCheckbox, .stButton {
+    color: #ffffff  !important;  /* Cor clara do texto */
+}
+
+/* 🔹 Ajusta o fundo de TODOS os campos */
+input[type="text"], select, textarea, .stTextInput, .stSelectbox, .stCheckbox {
+    background-color: #4b5a35b6 !important;  /* Fundo semi-transparente */
+    border: 2px solid #354a21 !important;  /* Borda verde escura */
+    border-radius: 6px; /* Cantos arredondados */
+    padding: 10px; /* Ajusta o espaçamento interno */
+}
+
+/* 🔹 Ajusta o placeholder (texto dentro do campo quando vazio) */
+input[type="text"]::placeholder, textarea::placeholder, .stTextInput::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;  /* Cor clara para contraste */
+}
+
+/* 🔹 Ajusta o efeito ao passar o mouse e ao focar no campo */
+input[type="text"]:focus, select:focus, textarea:focus, .stTextInput:focus, .stSelectbox:focus {
+    background-color: #4b5a35 !important;  /* Fundo sólido ao focar */
+    border-color: #2c3d18 !important;  /* Verde ainda mais escuro na borda */
+    outline: none !important; /* Remove o contorno padrão */
+}
+
+/* 🔹 Ajusta os botões */
+.stButton > button {
+    background-color: #4b5a35 !important;  /* Cor de fundo do botão */
+    color: #ffffff !important;  /* Cor do texto no botão */
+    border: 2px solid #354a21 !important;  /* Borda verde escura */
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+/* 🔹 Ajusta o efeito hover nos botões */
+.stButton > button:hover {
+    background-color: #354a21 !important;  /* Tom mais escuro no hover */
+    color: #FFFFFF !important; /* Texto branco ao passar o mouse */
+}
+
+/* 🔹 Ajusta os checkboxes */
+.stCheckbox div {
+    color: #ffffff !important; /* Cor do texto do checkbox */
+}
+
+/* 🔹 Ajusta os textos dentro do Gerador de Blends */
+.stMarkdown, .stTextInput label, .stSelectbox label, .stCheckbox label, .stButton label {
+    font-size: 20px !important;
+    color: #ffffff !important;  /* Mantendo a cor harmoniosa */
+}
+
+
+/* 🔹 Ajusta os seletores (Dropdowns) para ficarem com a mesma cor do campo de digitação */
+div[data-baseweb="select"] > div {
+    background-color: #4b5a35b6 !important; /* Fundo igual ao campo de digitação */
+    border: 2px solid #354a21 !important; /* Borda mais escura para destaque */
+    border-radius: 6px;
+    color: #ffffff !important; /* Cor do texto */
+}
+
+/* 🔹 Ajusta a cor do texto dentro do seletor */
+div[data-baseweb="select"] span {
+    color: #ffffff !important;
+}
+
+/* 🔹 Ajusta o efeito hover do seletor */
+div[data-baseweb="select"]:hover {
+    background-color: #4b5a35 !important; /* Fundo sólido ao passar o mouse */
+}
+
+/* 🔹 Ajusta a cor da seta do dropdown */
+div[data-baseweb="select"] svg {
+    fill: #F5E1C8 !important; /* Cor clara para melhor contraste */
+}
+
+/* Mensagens de Erro */
+div[data-baseweb="notification"][role="alert"] {
+    border: 3px solid #000000 !important;
+    color: #000000 !important;
+    background-color: #a0a67e!important;
+    font-weight: bold !important;
+}
+
+/* Ícone de erro */
+div[data-baseweb="notification"][role="alert"] svg {
+    fill: #494949 !important;
+}
+
+
